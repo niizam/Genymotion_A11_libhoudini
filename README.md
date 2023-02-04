@@ -31,7 +31,7 @@ To edit `build.prop` in step 2 you need [adb](https://www.xda-developers.com/ins
 ```
 adb shell
 su
-mount -o rw,remount /system
+mount -o rw,remount /
 vi /system/build.prop
 vi /system/vendor/build.prop
 ```
