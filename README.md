@@ -4,7 +4,8 @@ Genymotion ARM, ARMv7, ARMv8/ARM64 Translation for Android 11
 
 How to install:
 
-1. Copy and paste this to `/system/build.prop` and `/system/vendor/build.prop`
+1. Open the Android 11 emulator 
+2. Copy and paste this to `/system/build.prop` and `/system/vendor/build.prop`
 ```
 ro.product.cpu.abilist=x86_64,x86,arm64-v8a,armeabi-v7a,armeabi
 ro.product.cpu.abilist32=x86,armeabi-v7a,armeabi
@@ -22,8 +23,9 @@ ro.dalvik.vm.isa.arm=x86
 ro.dalvik.vm.isa.arm64=x86_64
 ro.zygote=zygote64_32
 ```
-2. Download [libhoudini](https://github.com/niizam/Genymotion_A11_libhoudini/releases/download/1.0/system.zip) from releases page.
-3. Drag and drop `system.zip` to emulator
+3. Download [libhoudini](https://github.com/niizam/Genymotion_A11_libhoudini/releases/download/1.0/system.zip) from releases page.
+4. Drag and drop `system.zip` to emulator
+5. Restart the emulator
 
 To edit `build.prop` in step 1 you need [adb](https://www.xda-developers.com/install-adb-windows-macos-linux/) installed.
 ```
