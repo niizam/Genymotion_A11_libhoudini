@@ -27,7 +27,7 @@ ro.zygote=zygote64_32
 4. Drag and drop `system.zip` to emulator
 5. Restart the emulator
 
-To edit `build.prop` in step 1 you need [adb](https://www.xda-developers.com/install-adb-windows-macos-linux/) installed.
+To edit `build.prop` in step 2 you need [adb](https://www.xda-developers.com/install-adb-windows-macos-linux/) installed.
 ```
 adb shell
 su
