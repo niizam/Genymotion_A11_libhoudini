@@ -36,3 +36,6 @@ mount -o rw,remount /
 vi /system/build.prop
 vi /system/vendor/build.prop
 ```
+
+Tested game
+![game](https://user-images.githubusercontent.com/45286708/216749410-4aae71e1-dd50-482a-8b71-b32318ec6fd1.png)
