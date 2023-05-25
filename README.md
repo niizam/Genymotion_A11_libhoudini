@@ -29,13 +29,29 @@ ro.zygote=zygote64_32
 5. Restart the emulator
 
 To edit `build.prop` in step 2 you need [adb](https://www.xda-developers.com/install-adb-windows-macos-linux/) installed.
-```
+```bash
 adb shell
+```
+```bash
 su
 mount -o rw,remount /
-vi /system/build.prop
-vi /system/vendor/build.prop
 ```
-
+```bash
+echo 'ro.product.cpu.abilist=x86_64,x86,arm64-v8a,armeabi-v7a,armeabi
+ro.product.cpu.abilist32=x86,armeabi-v7a,armeabi
+ro.product.cpu.abilist64=x86_64,arm64-v8a
+ro.vendor.product.cpu.abilist=x86_64,x86,arm64-v8a,armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist32=x86,armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist64=x86_64,arm64-v8a
+ro.odm.product.cpu.abilist=x86_64,x86,arm64-v8a,armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=x86,armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=x86_64,arm64-v8a
+ro.dalvik.vm.native.bridge=libhoudini.so
+ro.enable.native.bridge.exec=1
+ro.enable.native.bridge.exec64=1
+ro.dalvik.vm.isa.arm=x86
+ro.dalvik.vm.isa.arm64=x86_64
+ro.zygote=zygote64_32' | tee -a /system/build.prop >> /system/vendor/build.prop
+```
 Tested game
 ![game](https://user-images.githubusercontent.com/45286708/216749410-4aae71e1-dd50-482a-8b71-b32318ec6fd1.png)
