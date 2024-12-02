@@ -34,6 +34,8 @@ adb shell
 ```
 ```bash
 su
+```
+```bash
 mount -o rw,remount /
 ```
 ```bash
